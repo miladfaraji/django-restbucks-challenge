@@ -2,13 +2,7 @@ from django.db import models
 from django.utils.translation import gettext as _
 from django.contrib.postgres.fields import ArrayField
 
-
-class BaseModel(models.Model):
-    created_at = models.DateTimeField(_('created at'),
-                                      auto_now=True)
-
-    class Meta:
-        abstract = True
+from project.utils.model import BaseModel
 
 
 class Product(BaseModel):

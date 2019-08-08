@@ -34,12 +34,16 @@ class Feature(BaseModel):
 
 class ProductFeature(BaseModel):
     product = models.ForeignKey('Product')
-    feature = models.ForeignKey('Feature')
-    value = models.CharField(_('value'), max_length=200)
+    feature = models.ForeignKey('Feature', null=True, blank=True)
+    value = models.CharField(_('value'), max_length=200, null=True, blank=True)
     price = models.IntegerField(_('price'), default=1000)
 
     class Meta:
         ordering = ['product', 'price']
+
+    @property
+    def product_name(self):
+        return self.product.name
 
     def __str__(self):
         return ','.join((str(self.product), str(self.feature), str(self.price)))

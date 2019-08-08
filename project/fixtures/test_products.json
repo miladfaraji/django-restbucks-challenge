@@ -1,0 +1,251 @@
+[
+  {
+    "model": "product.product",
+    "pk": 1,
+    "fields": {
+      "created_at": "2019-08-08T16:04:38.893Z",
+      "name": "Hot chocolate"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 2,
+    "fields": {
+      "created_at": "2019-08-08T16:13:42.532Z",
+      "name": "Latte"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 3,
+    "fields": {
+      "created_at": "2019-08-08T16:17:32.485Z",
+      "name": "Tea"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 4,
+    "fields": {
+      "created_at": "2019-08-08T16:17:27.349Z",
+      "name": "Espresso"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 5,
+    "fields": {
+      "created_at": "2019-08-08T16:21:29.061Z",
+      "name": "Cappuccino"
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 6,
+    "fields": {
+      "created_at": "2019-08-08T16:22:39.044Z",
+      "name": "Cookie"
+    }
+  },
+  {
+    "model": "product.feature",
+    "pk": 1,
+    "fields": {
+      "created_at": "2019-08-08T16:05:39.705Z",
+      "name": "size",
+      "values": "[\"small\", \"medium\", \"large\"]"
+    }
+  },
+  {
+    "model": "product.feature",
+    "pk": 2,
+    "fields": {
+      "created_at": "2019-08-08T16:14:24.521Z",
+      "name": "milk",
+      "values": "[\"skim\", \"semi\", \"whole\"]"
+    }
+  },
+  {
+    "model": "product.feature",
+    "pk": 3,
+    "fields": {
+      "created_at": "2019-08-08T16:18:23.194Z",
+      "name": "shots",
+      "values": "[\"single\", \"double\", \"triple\"]"
+    }
+  },
+  {
+    "model": "product.feature",
+    "pk": 4,
+    "fields": {
+      "created_at": "2019-08-08T16:23:18.289Z",
+      "name": "kind",
+      "values": "[\"chocolate chip\", \"ginger\"]"
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 3,
+    "fields": {
+      "created_at": "2019-08-08T16:12:40.775Z",
+      "product": 1,
+      "feature": 1,
+      "value": "small",
+      "price": 1200
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 4,
+    "fields": {
+      "created_at": "2019-08-08T16:12:57.154Z",
+      "product": 1,
+      "feature": 1,
+      "value": "medium",
+      "price": 1300
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 5,
+    "fields": {
+      "created_at": "2019-08-08T16:13:13.554Z",
+      "product": 1,
+      "feature": 1,
+      "value": "large",
+      "price": 1400
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 6,
+    "fields": {
+      "created_at": "2019-08-08T16:15:20.079Z",
+      "product": 2,
+      "feature": 2,
+      "value": "skim",
+      "price": 2000
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 7,
+    "fields": {
+      "created_at": "2019-08-08T16:17:01.370Z",
+      "product": 2,
+      "feature": 2,
+      "value": "semi",
+      "price": 3000
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 8,
+    "fields": {
+      "created_at": "2019-08-08T16:16:50.990Z",
+      "product": 2,
+      "feature": 2,
+      "value": "whole",
+      "price": 2500
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 9,
+    "fields": {
+      "created_at": "2019-08-08T16:18:53.943Z",
+      "product": 4,
+      "feature": 3,
+      "value": "single",
+      "price": 3000
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 10,
+    "fields": {
+      "created_at": "2019-08-08T16:19:12.844Z",
+      "product": 4,
+      "feature": 3,
+      "value": "double",
+      "price": 4000
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 11,
+    "fields": {
+      "created_at": "2019-08-08T16:19:52.049Z",
+      "product": 4,
+      "feature": 3,
+      "value": "triple",
+      "price": 5000
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 12,
+    "fields": {
+      "created_at": "2019-08-08T16:21:54.158Z",
+      "product": 5,
+      "feature": 1,
+      "value": "small",
+      "price": 5000
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 13,
+    "fields": {
+      "created_at": "2019-08-08T16:22:06.347Z",
+      "product": 5,
+      "feature": 1,
+      "value": "medium",
+      "price": 6000
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 14,
+    "fields": {
+      "created_at": "2019-08-08T16:22:15.463Z",
+      "product": 5,
+      "feature": 1,
+      "value": "large",
+      "price": 7000
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 15,
+    "fields": {
+      "created_at": "2019-08-08T16:24:12.283Z",
+      "product": 6,
+      "feature": 4,
+      "value": "ginger",
+      "price": 3000
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 16,
+    "fields": {
+      "created_at": "2019-08-08T16:24:37.587Z",
+      "product": 6,
+      "feature": 4,
+      "value": "chocolate chip",
+      "price": 5000
+    }
+  },
+  {
+    "model": "product.productfeature",
+    "pk": 17,
+    "fields": {
+      "created_at": "2019-08-08T23:01:23.872Z",
+      "product": 3,
+      "feature": null,
+      "value": null,
+      "price": 1000
+    }
+  }
+]

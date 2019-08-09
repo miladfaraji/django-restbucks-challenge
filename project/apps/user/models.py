@@ -5,6 +5,7 @@ from django.db import models
 
 class User(AbstractUser):
     phone = models.CharField(_('phone'), max_length=10, blank=True)
+    # USERNAME_FIELD = 'phone'
 
     class Meta:
         verbose_name = _('user')

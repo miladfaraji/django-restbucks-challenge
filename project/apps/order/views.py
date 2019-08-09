@@ -65,8 +65,6 @@ class OrderView(generics.RetrieveAPIView, generics.UpdateAPIView):
         serializer = self.get_serializer(instance=order)
         return Response(serializer.data)
 
-    def get_queryset(self):
-        return self.request.user.orders.all()
 
 
 class CancelOrderView(mixins.UpdateModelMixin, generics.GenericAPIView):

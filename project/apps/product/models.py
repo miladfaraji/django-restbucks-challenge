@@ -39,5 +39,13 @@ class ProductFeature(BaseModel):
     def product_name(self):
         return self.product.name
 
+    def get_price_by_number(self, number:int):
+        """
+        get
+        :param int number: number
+        :return:
+        """
+        return self.price * number
+
     def __str__(self):
         return ','.join((str(self.product), str(self.feature), str(self.price)))

@@ -48,4 +48,4 @@ class ProductFeature(BaseModel):
         return self.price * number
 
     def __str__(self):
-        return ','.join((str(self.product), str(self.feature), str(self.price)))
+        return ','.join((str(self.product), str(self.feature), str(self.value), str(self.price)))
